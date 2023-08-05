@@ -1,0 +1,22 @@
+.footer__p{
+    @include font-parrafos-footer;
+}
+.footer__derechosautori {
+    flex-direction: column;
+    .derechosautori__subi {
+        @include font-subtitulos-footer;
+    }
+    .derechosautori__parrafosi {
+        @include center-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 1%;
+        p {
+            @include font-parrafos-footer;
+        }
+        p a{
+            color: $colorenlacefooterindx;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+.maini__seccionunoi {
+    @include estr-main-seccuno-i;
+    @include breakpoint800 {
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh 50vh;
+        grid-template-areas: 
+        "seccunoindxtxt"
+        "seccunoindximg";
+        align-content: center;
+    }
+    @include breakpoint600 {
+        grid-template-columns: 100%;
+        grid-template-rows: 30vh 30vh;
+        grid-template-areas: 
+        "seccunoindxtxt"
+        "seccunoindximg";
+    }
+    .seccionunoi__textoi {
+        grid-area: seccunoindxtxt;
+        padding: 10%;
+        flex-direction: column;
+        @include center-flex;
+        
+        .textoi__subi {
+            padding: 2%;
+            @include font-subtitulos;
+        }
+        .textoi__pi {
+            padding: 2%;
+            @include font-parrafos;
+        }
+    }
+    .seccionunoi__imageni {
+        grid-area: seccunoindximg;
+        padding: 10%;
+        @include breakpoint800 {
+            padding: 1% 10%;
+        }
+        @include center-flex;
+        .imageni__imgi {
+            width: 100%;
+            border-radius: 1%;
+        }
+            
+        
+    }
+}
+.maini__secciondosi {
+    @include estr-main-seccdos-i;
+    .secciondosi__subi {
+        grid-area: seccdosindxsub;
+        color: $colortxtmainseccsdosindx;
+        @include center-flex;
+        @include font-subtitulos;
+    }
+    .secciondosi__serviciosi {
+        @include estr-seccdos-servi-i;
+        @include breakpoint600 {
+            grid-template-columns: 90%;
+            grid-template-rows: 30% 30% 30%;
+            grid-template-areas: 
+            "coff" 
+            "yumm" 
+            "bits"
+            ;
+        }
+        .serviciosi__enlacei--coff {
+            @include servi-enlaces-i;
+            grid-area: coff;
+            background-image: url(../assets/images/fondocoff.webp);
+            @include breakpoint600 {
+                 background-position: 0% 80%;
+            }
+            .enlacei__urli {
+                @include w-h-100;
+                @include center-flex;
+                flex-direction: column;
+                ;
+                color: $colortxtmainseccsdosindx;
+                
+                .urli__pi{
+                    background-color: #f4f4f4;
+                    color: black;
+                    width: 100%;
+                    @include font-parrafos;
+                }  
+                .urli__imageni {
+                    
+                    .imageni__imgi {
+                        width: 100%;
+                        border-radius: 1%;
+                    }
+                }
+            }
+        }
+        .serviciosi__enlacei--yumm {
+            @include servi-enlaces-i;
+            grid-area: yumm;
+            background-image: url(../assets/images/fondoyumm.webp);
+            .enlacei__urli {
+                @include w-h-100;
+                @include center-flex;
+                flex-direction: column;
+                .urli__pi{
+                    background-color: #f4f4f4;
+                    color: black;
+                    width: 100%;
+                    @include font-parrafos;
+                }  
+                .urli__imageni {
+            
+                    .imageni__imgi {
+                        width: 100%;
+                        border-radius: 1%;
+                        @include breakpoint600 {
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+        .serviciosi__enlacei--bits {
+            @include servi-enlaces-i;
+            grid-area: bits;
+            background-image: url(../assets/images/fondobits.webp);
+            .enlacei__urli {
+                @include w-h-100;
+                @include center-flex;
+                flex-direction: column;
+                .urli__pi{
+                    background-color: #f4f4f4;
+                    color: black;
+                    width: 100%;
+                    @include font-parrafos;
+                }  
+                .urli__imageni {
+                    
+                    .imageni__imgi {
+                        width: 100%;
+                        border-radius: 1%;
+                    }
+                }
+            }
+        }
+    }
+}

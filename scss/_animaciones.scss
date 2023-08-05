@@ -1,0 +1,271 @@
+// Animacion de fondo de la seccion servicios en index tras cumplirse :hover.
+
+$urli__imageni: 50%;
+$enlacei__urli: blur(30px);
+
+.urli__imageni {
+    width: $urli__imageni;
+    display: none;
+}
+
+.enlacei__urli:hover {
+    backdrop-filter: $enlacei__urli;
+    backdrop-filter: invert(40%);
+}
+.enlacei__urli:hover .urli__imageni {
+    display: inline-block;
+}
+.enlacei__urli:hover .urli__pi {
+    display: none;
+}
+// Animacion hover en los iconos de nav en index
+
+.item__ico {
+    transition: all 1s;
+    &:hover{
+        background-color: $colorfondoiconindx;
+        max-width: 90%;
+    }
+}
+.enlace__ico {
+    transition: all 1s;
+    &:hover{
+        background-color: $colorfondoiconindx;
+        max-width: 90%;
+    }
+}
+// Animacion hover en los iconos de nav en coffemex
+.itemy__icoy {
+    transition: all 1s;
+    &:hover{
+        background-color: $colortxtenlacesyumm;
+        max-width: 90%;
+    }
+}
+.enlacey__icoy {
+    transition: all 1s;
+    &:hover{
+        background-color: $colortxtenlacesyumm;
+        max-width: 90%;
+    }
+}
+// Animacion hover en los iconos de nav en yummy
+.itemc__icoc {
+    transition: all 1s;
+    &:hover{
+        background-color: $colorfondoiconcoff;
+        max-width: 90%;
+    }
+}
+.enlacec__icoc {
+    transition: all 1s;
+    &:hover{
+        background-color: $colorfondoiconcoff;
+        max-width: 90%;
+    }
+}
+// Animacion hover en los iconos de nav en bits
+.itemb__icob {
+    transition: all 1s;
+    &:hover{
+        background-color: $colortxtenlacesbits;
+        max-width: 90%;
+    }
+}
+.enlaceb__icob {
+    transition: all 1s;
+    &:hover{
+        background-color: $colortxtenlacesbits;
+        max-width: 90%;
+    }
+}
+// Animacion logo de index 
+// @keyframes logo {
+//     0%{ width: 25vh;}
+//     25%{ width: 30vh;}
+//     50%{ width: 25vh;}
+//     75%{ width: 30vh;}
+//     100%{ width: 25vh;}
+// }
+// .logo__imagen {
+//     animation: logo;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: ease-in-out;
+//     animation-duration: 10s;
+//     animation-delay: 5s;
+// }
+// Animacion en fondo de preguntas coffemex al cumplirse :hover
+
+.informacionc__textoc {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.seccionc__informacionc--uno:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(40%);
+    
+}
+.seccionc__informacionc--uno:hover .informacionc__subtituloc {
+    display: none;
+}
+.seccionc__informacionc--dos:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(30%);
+    
+}
+.seccionc__informacionc--dos:hover .informacionc__subtituloc {
+    display: none;
+}
+.seccionc__informacionc--tres:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(40%);
+    
+}
+.seccionc__informacionc--tres:hover .informacionc__subc {
+    display: none;
+}
+.seccionc__informacionc--cuatro:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(40%);
+    
+}
+.seccionc__informacionc--cuatro:hover .informacionc__subc {
+    display: none;
+}
+.seccionc__informacionc--cinco:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(40%);
+    
+}
+.seccionc__informacionc--cinco:hover .informacionc__subc {
+    display: none;
+}
+// Animacion en fondo de preguntas yummy al cumplirse :hover
+.informaciony__textoy {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.secciony__informaciony--uno:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--uno:hover .informaciony__subtituloy {
+    display: none;
+}
+.secciony__informaciony--dos:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--dos:hover .informaciony__subtituloy {
+    display: none;
+}
+.secciony__informaciony--tres:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--tres:hover .informaciony__subtituloy {
+    display: none;
+}
+.secciony__informaciony--cuatro:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--cuatro:hover .informaciony__subtituloy {
+    display: none;
+}
+.secciony__informaciony--cinco:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--cinco:hover .informaciony__subtituloy {
+    display: none;
+}
+// Animacion en fondo de preguntas bits al cumplirse :hover
+.informacionb__textob {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.seccionb__informacionb--uno:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--uno:hover .informacionb__subtitulob {
+    display: none;
+}
+.seccionb__informacionb--dos:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--dos:hover .informacionb__subtitulob {
+    display: none;
+}
+.seccionb__informacionb--tres:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--tres:hover .informacionb__subtitulob {
+    display: none;
+}
+.seccionb__informacionb--cuatro:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--cuatro:hover .informacionb__subtitulob {
+    display: none;
+}
+.seccionb__informacionb--cinco:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--cinco:hover .informacionb__subtitulob {
+    display: none;
+}

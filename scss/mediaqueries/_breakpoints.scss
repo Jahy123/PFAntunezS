@@ -1,0 +1,709 @@
+// @mixin font-titulos {
+//         @include breakpoint3000 {
+//             font-size: $titulo-font-size*2;
+//         }
+//         @include breakpoint2600 {
+//             font-size: $titulo-font-size*1.5;
+//         }
+//         @include breakpoint1800 {
+//             font-size: $titulo-font-size*1.3;
+//         }
+//         @include breakpoint1500 {
+//             font-size: $titulo-font-size*1.2;
+//         }
+//         @include breakpoint1000 {
+//             font-size: $titulo-font-size*1.2;
+//         }
+//         @include breakpoint600 {
+//             font-size: $titulo-font-size/2.5;
+//         }
+//         @include breakpoint300-horizontal {
+//             font-size: $titulo-font-size/2.5;
+//         }
+// }
+
+// @mixin font-subtitulos {
+//     @include breakpoint3000 {
+//             font-size: $subtitulo-font-size*2.5;
+//         }
+//         @include breakpoint2600 {
+//             font-size: $subtitulo-font-size*2;
+//         }
+//         @include breakpoint1800 {
+//             font-size: $subtitulo-font-size*1.8;
+//         }
+//         @include breakpoint1500 {
+//             font-size: $subtitulo-font-size*1.6;
+//         }
+//         @include breakpoint1000 {
+//             font-size: $subtitulo-font-size;
+//         }
+//         @include breakpoint600 {
+//             font-size: $subtitulo-font-size;
+//         }
+//         @include breakpoint300-horizontal {
+//             font-size: $subtitulo-font-size;
+//         }
+// }
+// @mixin font-parrafos {
+//     @include breakpoint3000 {
+//         font-size: $parrafo-font-size*3;
+//     }
+//         @include breakpoint2600 {
+//             font-size: $parrafo-font-size*2.5;
+//         }
+//         @include breakpoint1800 {
+//             font-size: $parrafo-font-size*2.3;
+//         }
+//         @include breakpoint1500 {
+//             font-size: $parrafo-font-size*2.1;
+//         }
+//         @include breakpoint1000 {
+//             font-size: $parrafo-font-size*1.5;
+//         }
+//         @include breakpoint600 {
+//             font-size: $parrafo-font-size;
+//         }
+//         @include breakpoint300-horizontal {
+//             font-size: $parrafo-font-size/1.5;
+//         }
+// }
+// @mixin font-parrafos-ch {
+//     @include breakpoint3000 {
+//         font-size: $parrafo-font-size*2;
+//     }
+//         @include breakpoint1800 {
+//             font-size: $parrafo-font-size*1.5;
+//         }
+//         @include breakpoint1500 {
+//             font-size: $parrafo-font-size;
+//         }
+//         @include breakpoint1000 {
+//             font-size: $parrafo-font-size/1.5;
+//         }
+//         @include breakpoint600 {
+//             font-size: $parrafo-font-size/2;
+//         }
+//         @include breakpoint300-horizontal {
+//             font-size: $parrafo-font-size/3;
+//         }
+// }
+// @mixin font-subtitulos-ch {
+//     @include breakpoint3000 {
+//         font-size: $subtitulo-font-size*2;
+//     }
+    
+//         @include breakpoint2600 {
+//             font-size: $subtitulo-font-size*1.5;
+//         }
+//         @include breakpoint1800 {
+//             font-size: $subtitulo-font-size;
+//         }
+//         @include breakpoint1000 {
+//             font-size: $subtitulo-font-size/1.5;
+//         }
+//         @include breakpoint600 {
+//             font-size: $subtitulo-font-size/2;
+//         }
+//         @include breakpoint450 {
+//             font-size: $subtitulo-font-size/2.5;
+//         }
+// }
+// @mixin font-subtitulos-cont {
+//     @include breakpoint3000 {
+//         font-size: 2em;
+//     }
+//         @include breakpoint2600 {
+//             font-size:1.9em      
+//         }
+//         @include breakpoint1800 {
+//             font-size: 1em;
+//         }
+//         @include breakpoint1000 {
+//             font-size: 1em        
+//         }
+//         @include breakpoint600 {
+//             font-size: .9em;
+//         }
+//         @include breakpoint450 {
+//             font-size: .8em        
+//         }
+// }
+// @mixin font-parrafos-cont {
+//         @include breakpoint3000 {
+//             font-size: 1.5em;      
+//         }
+//         @include breakpoint2600 {
+//             font-size: 1.4em;      
+//         }
+//         @include breakpoint1800 {
+//             font-size: 1.2em;
+//         }
+//         @include breakpoint1000 {
+//             font-size: 1.2em;        
+//         }
+//         @include breakpoint600 {
+//             font-size: 1.2em;
+//         }
+//         @include breakpoint450 {
+//             font-size: 1em        
+//         }
+// }
+// @mixin font-parrafos-cont-ch {
+
+//     @include breakpoint3000 {
+//         font-size: 6em;      
+//     }
+//         @include breakpoint2600 {
+//             font-size: .6em;     
+//         }
+//         @include breakpoint1800 {
+//             font-size: .6em;
+//         }
+//         @include breakpoint1000 {
+//             font-size: .6em;         
+//         }
+//         @include breakpoint600 {
+//             font-size: .6em;
+//         }
+//         @include breakpoint450 {
+//             font-size: .6em;        
+//         }
+// }
+@mixin breakpoint3000 {
+    @media screen and (max-width: 3000px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h3000 {
+    @media screen and (max-height: 3000px) {
+        @content;
+    }
+
+}
+@mixin breakpoint2500 {
+    @media screen and (max-width: 2500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h2500 {
+    @media screen and (max-height: 2500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint2500 {
+    @media screen and (max-width: 2500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h2500 {
+    @media screen and (max-height: 2500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint2000 {
+    @media screen and (max-width: 2000px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h2000 {
+    @media screen and (max-height: 2000px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1500 {
+    @media screen and (max-width: 1500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h1500 {
+    @media screen and (max-height: 1500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1000 {
+    @media screen and (max-width: 1000px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h1000 {
+    @media screen and (max-height: 1000px) {
+        @content;
+    }
+
+}
+@mixin breakpoint900 {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h900 {
+    @media screen and (max-height: 900px) {
+        @content;
+    }
+
+}
+@mixin breakpoint800 {
+    @media screen and (max-width: 800px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h800 {
+    @media screen and (max-height: 800px) {
+        @content;
+    }
+
+}
+@mixin breakpoint700 {
+    @media screen and (max-width: 700px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h700 {
+    @media screen and (max-height: 700px) {
+        @content;
+    }
+
+}
+@mixin breakpoint600 {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h600 {
+    @media screen and (max-height: 600px) {
+        @content;
+    }
+
+}
+@mixin breakpoint500 {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h500 {
+    @media screen and (max-height: 500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint400 {
+    @media screen and (max-width: 400px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h400 {
+    @media screen and (max-height: 400px) {
+        @content;
+    }
+
+}
+@mixin breakpoint300 {
+    @media screen and (max-width: 300px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h300 {
+    @media screen and (max-height: 300px) {
+        @content;
+    }
+
+}
+@mixin breakpoint200 {
+    @media screen and (max-width: 200px) {
+        @content;
+    }
+
+}
+@mixin breakpoint-h200 {
+    @media screen and (max-height: 200px) {
+        @content;
+    }
+
+}
+// ---------------------titulos------------------
+@mixin font-titulos {
+    @include breakpoint3000 {
+        font-size: $titulo-font-size*10;
+    }
+    @include breakpoint2500 {
+        font-size: $titulo-font-size*9;
+    }
+    @include breakpoint2000 {
+        font-size: $titulo-font-size*8;
+    }
+    @include breakpoint1500 {
+        font-size: $titulo-font-size*6;
+    }
+    @include breakpoint1000 {
+        font-size: $titulo-font-size*5;
+    }
+    @include breakpoint900 {
+        font-size: $titulo-font-size*5;
+    }
+    @include breakpoint800 {
+        font-size: $titulo-font-size*4.3;
+    }
+    @include breakpoint700 {
+        font-size: $titulo-font-size*4;
+    }
+    @include breakpoint600 {
+        font-size: $titulo-font-size*3.5;
+    }
+    @include breakpoint500 {
+        font-size: $titulo-font-size*3;
+    }
+    @include breakpoint400 {
+        font-size: $titulo-font-size*2.5;
+    }
+    @include breakpoint300 {
+        font-size: $titulo-font-size*2;
+    }
+}
+// --------------------subtitulos--------------------
+@mixin font-subtitulos {
+    @include breakpoint3000 {
+        font-size: $subtitulo-font-size*6;
+    }
+    @include breakpoint2500 {
+        font-size: $subtitulo-font-size*5;
+    }
+    @include breakpoint2000 {
+        font-size: $subtitulo-font-size*3;
+    }
+    @include breakpoint1500 {
+        font-size: $subtitulo-font-size*2.5;
+    }
+    @include breakpoint1000 {
+        font-size: $subtitulo-font-size*2;
+    }
+    @include breakpoint900 {
+        font-size: $subtitulo-font-size*1.8;
+    }
+    @include breakpoint800 {
+        font-size: $subtitulo-font-size*1.9;
+    }
+    @include breakpoint700 {
+        font-size: $subtitulo-font-size*1.5;
+    }
+    @include breakpoint600 {
+        font-size: $subtitulo-font-size*1.4;
+    }
+    @include breakpoint500 {
+        font-size: $subtitulo-font-size*1.3;
+    }
+    @include breakpoint400 {
+        font-size: $subtitulo-font-size*1.2;
+    }
+    @include breakpoint300 {
+        font-size: $subtitulo-font-size*1.1;
+    }
+}
+// ----------------parrafos---------------
+@mixin font-parrafos {
+    @include breakpoint3000 {
+        font-size: $parrafo-font-size*3;
+    }
+    @include breakpoint2500 {
+        font-size: $parrafo-font-size*2.9;
+    }
+    @include breakpoint2000 {
+        font-size: $parrafo-font-size*2;
+    }
+    @include breakpoint1500 {
+        font-size: $parrafo-font-size*1.5;
+    }
+    @include breakpoint1000 {
+        font-size: $parrafo-font-size;
+    }
+    @include breakpoint900 {
+        font-size: $parrafo-font-size*1.3;
+    }
+    @include breakpoint800 {
+        font-size: $parrafo-font-size*1.5;
+    }
+    @include breakpoint700 {
+        font-size: $parrafo-font-size*1.1;
+    }
+    @include breakpoint600 {
+        font-size: $parrafo-font-size;
+    }
+    @include breakpoint500 {
+        font-size: $parrafo-font-size;
+    }
+    @include breakpoint400 {
+        font-size: $parrafo-font-size/1.2;
+    }
+    @include breakpoint300 {
+        font-size: $parrafo-font-size/1.3;
+    }
+    
+}
+// --------------------legends contacto---------------
+@mixin font-legends-contacto {
+    @include breakpoint3000 {
+        font-size: $parrafo-font-size/2.5;
+    }
+    @include breakpoint2000 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint1500 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint1000 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint900 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint800 {
+        font-size: $titulo-font-size/2;
+    }
+    @include breakpoint700 {
+        font-size: $titulo-font-size/2;
+    }
+    @include breakpoint600 {
+        font-size: $titulo-font-size/2;
+    }
+    @include breakpoint500 {
+        font-size: $titulo-font-size/2;
+    }
+    @include breakpoint400 {
+        font-size: $titulo-font-size/2;
+    }
+    @include breakpoint300 {
+        font-size: $titulo-font-size/2;
+    }
+}
+// --------------enlaces coffemex-------------
+@mixin font-enlaces-contacto-coff {
+    @include breakpoint3000 {
+        font-size: $parrafo-font-size*3.5;
+    }
+    @include breakpoint2500 {
+        font-size: $parrafo-font-size*2.5;
+    }
+    @include breakpoint2000 {
+        font-size: $parrafo-font-size*2;
+    }
+    @include breakpoint1500 {
+        font-size: $parrafo-font-size;
+    }
+    @include breakpoint400 {
+        font-size: $parrafo-font-size/1.3;
+    }
+}
+// --------------foooter------------------
+@mixin font-subtitulos-footer {
+    @include breakpoint3000 {
+        font-size: $subtitulo-font-size*3;
+    }
+    @include breakpoint2500 {
+        font-size: $subtitulo-font-size*2.9;
+    }
+    @include breakpoint2000 {
+        font-size: $subtitulo-font-size*2.3;
+    }
+    @include breakpoint1500 {
+        font-size: $subtitulo-font-size*1.5;
+    }
+    @include breakpoint1000 {
+        font-size: $subtitulo-font-size;
+    }
+    @include breakpoint900 {
+        font-size: $subtitulo-font-size/1.5;
+    }
+    @include breakpoint800 {
+        font-size: $subtitulo-font-size/2;
+    }
+    @include breakpoint700 {
+        font-size: $subtitulo-font-size/3;
+    }
+    @include breakpoint600 {
+        font-size: $subtitulo-font-size/2;
+    }
+    @include breakpoint500 {
+        font-size: $subtitulo-font-size/2;
+    }
+    @include breakpoint400 {
+        font-size: $subtitulo-font-size/2;
+    }
+    @include breakpoint300 {
+        font-size: $subtitulo-font-size/2;
+    }
+
+}
+// --------------parrafos footer-------------
+@mixin font-parrafos-footer {
+    @include breakpoint3000 {
+        font-size: $parrafo-font-size*2;
+    }
+    @include breakpoint2500 {
+        font-size: $parrafo-font-size*1.9;
+    }
+    @include breakpoint2000 {
+        font-size: $parrafo-font-size*1.5;
+    }
+    @include breakpoint1500 {
+        font-size: $parrafo-font-size*1.3;
+    }
+    @include breakpoint1000 {
+        font-size: $parrafo-font-size;
+    }
+    @include breakpoint900 {
+        font-size: $parrafo-font-size/1.5;
+    }
+    @include breakpoint800 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint700 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint600 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint500 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint400 {
+        font-size: $parrafo-font-size/2;
+    }
+    @include breakpoint300 {
+        font-size: $parrafo-font-size/2;
+    }
+}
+
+
+@mixin breakpoint2600 {
+    @media screen and (max-width: 2600px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1800 {
+    @media screen and (max-width: 1800px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1900 {
+    @media screen and (max-width: 1900px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1300 {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1100 {
+    @media screen and (max-width: 1100px) {
+        @content;
+    }
+
+}
+
+@mixin breakpoint800 {
+    @media screen and (max-width: 800px) {
+        @content;
+    }
+
+}
+
+@mixin breakpoint600 {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+
+}
+// @mixin breakpoint-w2500-h3000 {
+//     @media screen and (max-width: 2500px) and (max-height:  3000px) {
+//         @content;
+//     }
+
+// }
+// @mixin breakpoint-w2000-h3000 {
+//     @media screen and (min-width: 2000px) and (min-height:  3000px) {
+//         @content;
+//     }
+
+// }
+// @mixin breakpoint-w1500-h2500 {
+//     @media screen and (max-width: 1500px) and (max-height:  2500px) {
+//         @content;
+//     }
+
+// }
+// @mixin breakpointnesthub {
+//     @media screen and (max-width: 1024px) and (max-height:  600px) {
+//         @content;
+//     }
+
+// }
+// @mixin breakpointgalaxy {
+//     @media screen and (max-width: 740px) and (max-height:  360px) {
+//         @content;
+//     }
+
+// }
+// @mixin breakpointpixel {
+//     @media screen and (max-width: 393px) and (max-height:  851px) {
+//         @content;
+//     }
+
+// }
+// @mixin breakpointiphone {
+//     @media screen and (max-width: 414px) and (max-height:  896px) {
+//         @content;
+//     }
+
+// }
+// @mixin breakpointiphonese {
+//     @media screen and (max-width: 667px) and (max-height:  375px) {
+//         @content;
+//     }
+
+// }
+// @mixin breakpointiphoneseh {
+//     @media screen and (max-width: 375px) and (max-height:  667px) {
+//         @content;
+//     }
+
+// }
+@mixin breakpoint600-horizontal {
+    @media screen and (max-height: 600px){
+        @content;
+    }
+}
+@mixin breakpoint300-horizontal {
+    @media screen and (max-height: 300px){
+        @content;
+    }
+}
+
+// }
+// @mixin breakpoint1100-horizontal {
+//     @media screen and (max-height: 1100px){
+//         @content;
+//     }
+
+// }

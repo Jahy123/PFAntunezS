@@ -1,0 +1,90 @@
+.encabezadoc__logoc {
+    grid-area: logocoff;
+    text-align: center;
+    padding: 5%;
+    .logoc__imagenc {
+        width: 30vh;
+        @include fondo_elementos_header;
+        
+    }
+}
+.encabezadoc__navc {
+    @include estr-header-nav-coff;
+    @include fondo_elementos_header;
+    
+    @include breakpoint800 {
+        top: 0;
+        width: 100%;
+        background-color: $colorfondocoff;
+    }
+    .navc__listac{
+        @include breakpoint800 {
+            @include center-flex;
+        }
+        .listac__itemc {
+            @include breakpoint800 {
+                @include center-flex;
+            }
+            .itemc__enlacec {
+                @include breakpoint800 {
+                @include center-flex;
+                }
+                .enlacec__icoc {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                    width: 50%;            
+                }
+                }
+            }
+        }
+        .listac__itemc {
+            .itemc__icoc {
+                @include tamiconosnav;
+                @include breakpoint800 {
+                    width: 50%;
+                }
+            }
+        }
+        .listac__itemc {
+            .itemc__enlacec {
+                .enlacec__icoc {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listac__itemc {
+            .itemc__enlacec {
+                .enlacec__icoc {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listac__itemc {
+            .itemc__enlacec {
+                .enlacec__icoc {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+    }
+}
+.encabezadoc__tituloc {
+    grid-area: titulocoff;
+    color: $colortxttitulocoff;
+    @include center-flex;
+    padding: 2%;
+   
+    h1 {
+        @include fondo_elementos_header;
+        @include font-titulos;
+    }
+}

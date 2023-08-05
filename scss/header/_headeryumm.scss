@@ -1,0 +1,95 @@
+.encabezadoy__logoy {
+    grid-area: logoyumm;
+    text-align: center;
+    padding: 5%;
+    .logoy__imageny {
+        width: 50vh;
+        @include fondo_elementos_header-yumm;
+        @include breakpoint500 {
+            width: 30vh;
+        };
+        
+    }
+}
+.encabezadoy__navy {
+    @include estr-header-nav-yumm;
+    @include fondo_elementos_header-yumm;
+    
+    @include breakpoint800 {
+        top: 0;
+        width: 100%;
+        background-color: $colorfondoyumm;
+    }
+    .navy__listay{
+        @include breakpoint800 {
+            @include center-flex;
+        }
+        .listay__itemy {
+            @include breakpoint800 {
+                @include center-flex;
+            }
+            .itemy__enlacey {
+                @include breakpoint800 {
+                @include center-flex;
+                }
+                .enlacey__icoy {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                    width: 50%;            
+                }
+                }
+            }
+        }
+        .listay__itemy {
+            .itemy__enlacey {
+                
+                .enlacey__icoy {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listay__itemy {
+            .enlacey__icoy {
+                @include tamiconosnav;
+                @include breakpoint800 {
+                    width: 50%;
+                }
+            }
+        }
+        
+        .listay__itemy {
+            .itemy__enlacey {
+                .enlacey__icoy {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listay__itemy {
+            .itemy__enlacey {
+                .enlacey__icoy {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+    }
+}
+.encabezadoy__tituloy {
+    grid-area: tituloyumm;
+    color: $colortxttituloyumm;
+    @include center-flex;
+    padding: 2%;
+   
+    h1 {
+        @include font-titulos;
+        @include fondo_elementos_header-yumm;
+    }
+}

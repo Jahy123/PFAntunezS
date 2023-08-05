@@ -1,0 +1,23 @@
+.footerc__pc {
+    @include font-parrafos-footer;
+}
+.footerc__derechosautorc {
+    @include center-flex;
+    flex-direction: column;
+    .derechosautorc__subc {
+        @include font-subtitulos-footer;
+    }
+    .derechosautorc__parrafosc {
+        @include center-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 1%;
+    }
+    p {
+        @include font-parrafos-footer;
+    }
+    p a{
+        color: $colorenlacefootercoff;
+    }
+}

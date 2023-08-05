@@ -1,0 +1,134 @@
+.encabezado__logo {
+    grid-area: logo;
+    text-align: center;
+    padding: 5%;
+    
+    .logo__imagen {
+        width: 30vh;
+        @include breakpoint300 {
+            width: 20vh
+    }
+    }
+}
+.encabezado__nav {
+    @include estr-header-nav-i;
+    @include breakpoint800 {
+        top: 0;
+        width: 100%;
+    }
+    @include breakpoint600-horizontal {
+        top: 0;
+        width: 100%;
+        height: 33vh;
+    }
+    .nav__lista {
+        @include breakpoint800 {
+            @include center-flex;
+            background-color: #f4f4f4;
+        }
+        @include breakpoint600-horizontal {
+            background-color: #f4f4f4;
+            @include center-flex;
+        }
+        .lista__item {
+            @include breakpoint800 {
+                @include center-flex;
+            }
+            @include breakpoint600-horizontal {
+                @include center-flex;
+            }
+            .item__ico {
+                @include tamiconosnav;
+                @include breakpoint800 {
+                    width: 50%;
+                               
+                }
+                @include breakpoint600-horizontal {  
+                    width: 50%;       
+                }
+            }
+        }
+        .lista__item {
+            .item__enlace {
+                @include breakpoint800 {
+                    @include center-flex;
+                }
+                @include breakpoint600-horizontal {
+                    @include center-flex;
+                }
+                .enlace__ico {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                    @include breakpoint600-horizontal { 
+                        width: 50%         
+                    }
+                }
+            }
+        }
+        .lista__item {
+           
+            .item__enlace {
+                @include breakpoint600-horizontal {
+                    @include center-flex;
+                }
+                .enlace__ico {
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                    @include breakpoint600-horizontal {
+                        width: 50%;          
+                    }
+                }
+            }
+        }
+        .lista__item {
+            @include breakpoint600-horizontal {
+            }
+            .item__enlace {
+                @include breakpoint600-horizontal {
+                    @include center-flex;
+                }
+                .enlace__ico {
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                    @include breakpoint600-horizontal { 
+                        width: 50%;          
+                    }
+                }
+            }
+        }
+        .lista__item {
+            @include breakpoint600-horizontal {
+                height: 50%;
+                width: 100%
+            }
+            .item__enlace {
+                @include breakpoint600-horizontal {
+                    height: 50%;
+                    width: 100%
+                }
+                .enlace__ico {
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                    @include breakpoint600-horizontal {
+                        width: 30%; 
+                        padding: 2%;          
+                    }
+                }
+            }
+        }
+    }
+
+}
+.encabezado__titulo {
+    grid-area: titulo;
+    @include center-flex;
+    padding: 2%;
+    h1 {
+        @include font-titulos;
+    }
+}

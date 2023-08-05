@@ -1,0 +1,534 @@
+@mixin reset {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+}
+
+// estructuras
+
+@mixin estr-body-i {
+    background-color: $colorfondoindx;
+    width: 100%;
+    height: 319vh;
+    display: grid;
+    grid: {
+        template-columns: 5% 90% 5%;
+        template-rows: 99vh 200vh 20vh ;
+        template-areas:
+        "headerindx headerindx headerindx"
+        ". mainindx ."
+        "footer footer footer"
+        ;
+    }
+}
+@mixin estr-body-coff {
+    background-color: $colorfondocoff;
+    width: 100%;
+    height: 639vh;
+    display: grid;
+    grid: {
+        template-columns: 5% 90% 5%;
+        template-rows: 99vh 420vh 100vh 20vh ;
+        template-areas:
+        "headercoff headercoff headercoff"
+        ". maincoff ."
+        ". contactocoff ."
+        "footercoff footercoff footercoff"
+        ;
+    }
+}
+@mixin estr-body-yumm {
+    background-color: $colorfondoyumm;
+    width: 100%;
+    height: 639vh;
+    display: grid;
+    grid: {
+        template-columns: 5% 90% 5%;
+        template-rows: 99vh 420vh 100vh 20vh ;
+        template-areas:
+        "headeryumm headeryumm headeryumm"
+        ". mainyumm ."
+        ". contactoyumm ."
+        "footeryumm footeryumm footeryumm"
+        ;
+    }
+}
+@mixin estr-body-bits {
+    background-color: $colorfondobits;
+    width: 100%;
+    height: 639vh;
+    display: grid;
+    grid: {
+        template-columns: 5% 90% 5%;
+        template-rows: 99vh 420vh 100vh 20vh ;
+        template-areas:
+        "headerbits headerbits headerbits"
+        ". mainbits ."
+        ". contactobits ."
+        "footerbits footerbits footerbits"
+        ;
+    }
+}
+@mixin estr-body-cont {
+    background-color: $colorfondocont;
+    width: 100%;
+    height: 219vh;
+    display: grid;
+    grid: {
+        template-columns: 5% 90% 5%;
+        template-rows: 99vh 150vh 20vh ;
+        template-areas:
+        "headercont headercont headercont"
+        ". maincont ."
+        "footercont footercont footercont"
+        ;
+    }
+}
+@mixin estr-body-header-i {
+    display: grid;
+    grid: {
+        area: headerindx;
+        template-columns: 5% 90% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "nav logo ."
+        "nav titulo ."
+        ;
+    }
+}
+@mixin estr-body-header-coff {
+    display: grid;
+    grid: {
+        area: headercoff;
+        template-columns: 5% 90% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "navcoff logocoff ."
+        "navcoff titulocoff ."
+        ;
+    }
+}
+@mixin estr-body-header-yumm {
+    display: grid;
+    grid: {
+        area: headeryumm;
+        template-columns: 5% 90% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "navyumm logoyumm ."
+        "navyumm tituloyumm ."
+        ;
+    }
+}
+@mixin estr-body-header-bits {
+    display: grid;
+    grid: {
+        area: headerbits;
+        template-columns: 5% 90% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "navbits logobits ."
+        "navbits titulobits ."
+        ;
+    }
+}
+@mixin estr-body-header-cont {
+    display: grid;
+    grid: {
+        area: headercont;
+        template-columns: 5% 90% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "navcont logocont ."
+        "navcont titulocont ."
+        ;
+    }
+}
+@mixin estr-body-main-i {
+    background-color: $colormainindx;
+    color: $colortxtmainindx;
+    display: grid;
+    grid: {
+        area: mainindx;
+        template-columns:  100%;
+        template-rows: 50% 50%;
+        template-areas:
+        "seccunoindx"
+        "seccdosindx";
+    }
+}
+@mixin estr-body-main-coff {
+    background-color: $colormaincoff;
+    color: $colortxtmaincoff;
+    display: grid;
+    grid: {
+        area: maincoff;
+        template-columns:  100%;
+        template-rows: 100vh 320vh;
+        template-areas:
+        "seccunocoff"
+        "seccdoscoff";
+    }
+}
+@mixin estr-body-main-yumm {
+    background-color: $colormainyumm;
+    color: $colortxtmainyumm;
+    display: grid;
+    grid: {
+        area: mainyumm;
+        template-columns:  100%;
+        template-rows: 100vh 320vh;
+        template-areas:
+        "seccunoyumm"
+        "seccdosyumm";
+    }
+}
+@mixin estr-body-main-bits {
+    background-color: $colormainbits;
+    color: $colortxtmainbits;
+    display: grid;
+    grid: {
+        area: mainbits;
+        template-columns:  100%;
+        template-rows: 100vh 320vh;
+        template-areas:
+        "seccunobits"
+        "seccdosbits";
+    }
+}
+
+@mixin estr-body-contacto-coff {
+    background-color: $colorcontactocoff;
+    color: $colortxtcontactocoff;
+    display: grid;
+    grid: {
+        area: contactocoff;
+        template-columns: 60% 40%;
+        template-rows: 100vh;
+        template-areas:
+        "txtcontacoff enlacescontacoff"
+        ;
+    }
+}
+@mixin estr-body-contacto-yumm {
+    background-color: $colorcontactocoff;
+    color: $colortxtcontactocoff;
+    display: grid;
+    grid: {
+        area: contactoyumm;
+        template-columns: 60% 40%;
+        template-rows: 100vh;
+        template-areas:
+        "txtcontayumm enlacescontayumm"
+        ;
+    }
+}
+@mixin estr-body-footer-i {
+    grid-area: footer;
+    background-color: $colorfooterindx;
+    color: $colortxtfooterindx;
+}
+@mixin estr-body-footer-coff {
+    grid-area: footercoff;
+    background-color: $colorfootercoff;
+    color: $colortxtfootercoff;
+}
+@mixin estr-body-footer-yumm {
+    grid-area: footeryumm;
+    background-color: $colorfooteryumm;
+    color: $colortxtfooteryumm;
+}
+@mixin estr-body-footer-bits {
+    grid-area: footerbits;
+    background-color: $colorfooterbits;
+    color: $colortxtfooterbits;
+}
+@mixin estr-body-footer-cont {
+    grid-area: footercont;
+    background-color: $colorfootercont;
+    color: $colortxtfootercont;
+}
+@mixin estr-header-nav-i {
+    grid-area: nav;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+@mixin estr-header-nav-coff {
+    grid-area: navcoff;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+@mixin estr-header-nav-yumm {
+    grid-area: navyumm;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+@mixin estr-header-nav-bits {
+    grid-area: navbits;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+@mixin estr-header-nav-cont {
+    grid-area: navcont;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+@mixin estr-main-seccuno-i {
+    display: grid;
+    grid: {
+        area: seccunoindx;
+        template-columns:  50% 50%;
+        template-rows: 100%;
+        template-areas:
+        "seccunoindxtxt seccunoindximg"
+        ;
+    }
+}
+@mixin estr-main-seccuno-coff {
+    display: grid;
+    grid: {
+        area: seccunocoff;
+        template-columns:  50% 50%;
+        template-rows: 100%;
+        template-areas:
+        "seccunocoffsub seccunocoffparr"
+        ;
+    }
+}
+@mixin estr-main-seccuno-yumm {
+    display: grid;
+    grid: {
+        area: seccunoyumm;
+        template-columns:  50% 50%;
+        template-rows: 100%;
+        template-areas:
+        "seccunosub seccunoparr"
+        ;
+    }
+}
+@mixin estr-main-seccuno-bits {
+    display: grid;
+    grid: {
+        area: seccunobits;
+        template-columns:  50% 50%;
+        template-rows: 100%;
+        template-areas:
+        "seccunosubbits seccunoparrbits"
+        ;
+    }
+}
+@mixin estr-main-cont {
+    // color: $colortxtmainbits;
+    display: grid;
+    grid: {
+        area: maincont;
+        template-columns: 50% 50%;
+        template-rows: 60vh 40vh;
+        template-areas:
+        "datospersonalescont datoseventocont"
+        "finalizarcont finalizarcont";
+    }
+}
+@mixin estr-main-seccdos-i {
+    background-color: $colormainseccdosindx;
+    display: grid;
+    grid: {
+        area: seccdosindx;
+        template-columns:  100%;
+        template-rows: 25% 75%;
+        template-areas:
+        "seccdosindxsub"
+        "seccdosindxserv"
+        ;
+    }
+}
+@mixin estr-main-seccdos-coff {
+    background-color: $colorfondocoff;
+    color: $colortxtmainseccdoscoff;
+    display: grid;
+    grid: {
+        area: seccdoscoff;
+        template-columns:  100%;
+        template-rows: 20vh 50vh 100vh 50vh 50vh 50vh;
+        template-areas:
+        "preguntassubcoff"
+        "ubicacionescoff"
+        "capersocoff"
+        "reqlegcoff"
+        "menuscoff"
+        "prescoff"
+        ;
+    }
+}
+@mixin estr-main-seccdos-yumm{
+    background-color: $colorfondocoff;
+    color: $colortxtmainseccdoscoff;
+    display: grid;
+    grid: {
+        area: seccdosyumm;
+        template-columns:  100%;
+        template-rows: 20vh 50vh 100vh 50vh 50vh 50vh;
+        template-areas:
+        "preguntassub"
+        "eventos"
+        "menus"
+        "personalizacion"
+        "precio"
+        "ubica"
+        ;
+    }
+}
+@mixin estr-main-seccdos-bits{
+    background-color: $colorfondocoff;
+    color: $colortxtmainseccdoscoff;
+    display: grid;
+    grid: {
+        area: seccdosbits;
+        template-columns:  100%;
+        template-rows: 20vh 50vh 100vh 50vh 50vh 50vh;
+        template-areas:
+        "preguntassubbits"
+        "personaeventos"
+        "calidad"
+        "alimentos"
+        "ubicaciones"
+        "planes"
+        ;
+    }
+}
+@mixin estr-seccdos-servi-i {
+    display: grid;
+    grid: {
+        area: seccdosindxserv;
+        template-columns:  30% 30% 30%;
+        template-rows: 90%;
+        template-areas:
+        "coff yumm bits"
+        ;
+    }
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+// posicionamiento
+    // flex
+@mixin center-flex {
+    display: flex;
+    align: {
+        items: center;
+        content: center;
+    }
+    justify-content: center;
+    text-align: center;
+
+}
+@mixin center-grid{
+    display: grid;
+    align: {
+        items: center;
+        content: center;
+    }
+    justify-content: center;
+    text-align: center;
+
+}
+@mixin start-flex{
+    display: flex;
+    flex-direction: column;
+    align: {
+        items: flex-start;
+        content: flex-start;
+    }
+    justify-content: flex-start;
+
+}
+// Dimesion iconos-nav
+@mixin tamiconosnav{
+    width: 100%;
+    padding: 10%;
+}
+// dimension apartado servicios
+@mixin servi-enlaces-i {
+    width: 100%;
+    height: 100%;
+    background: {
+        size: cover;
+        position: center;
+    }
+}
+@mixin servicios-urls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+// tamaños 
+@mixin w-h-100 {
+    width: 100%;
+    height: 100%;
+}
+
+// Fodos de imagenes {
+    @mixin fondo_header {
+        background: {
+            image: url(../assets/images/fondocoff.webp);
+            size: cover;
+            position: 0 79%;
+        }
+    }
+    @mixin fondo_header-yumm {
+        background: {
+            image: url(../assets/images/fondoyummy.webp);
+            size: cover;
+            position: center 79%;
+        }
+    }
+    @mixin fondo_header-bits {
+        background: {
+            image: url(../assets/images/fondobits.webp);
+            size: cover;
+            position: center 79%;
+        }
+    }
+    @mixin fondo_header-cont {
+        background: {
+            image: url(../assets/images/fondocontacto.webp);
+            size: cover;
+            position: center 51%;
+        }
+    }
+    @mixin fondo_elementos_header{
+        backdrop-filter: blur(50px);
+        background-color: #030b1291;
+        border-radius: 9%;
+    }
+    @mixin fondo_elementos_header-yumm{
+        backdrop-filter: blur(50px);
+        background-color: #fffbec03;
+    }
+    @mixin fondo_elementos_header-bits{
+        backdrop-filter: blur(50px);
+        background-color: #e8b98f;
+    }
+    @mixin fondo_elementos_header-cont{
+        backdrop-filter: blur(50px);
+        background-color: #c8b6a8;
+    }
+    

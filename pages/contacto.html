@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Yummy banquetes y Bits dulces recuerdos.">
+    <meta name="keywords" content="Bits dulces recuerdos, Yummy banquetes, Alberto Antunez, Chef, Empresas, Bodas, Graduaciones, Aniversarios.">
+    <link rel="shortcut icon" href="../assets/icons/coffemex.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto</title>
+</head>
+<body class="bodyct">
+    <header class="bodyct__encabezadoct">
+        <div class="encabezadoct__logoct">
+            <img class="logoct__imagenct" src="../assets/logos/coffemexlogo.svg" alt="Logo de Coffemex Comedor industrial">
+        </div>
+        <nav class="encabezadoct__navct">
+            <ul class="navct__listact">
+                <li class="listact__itemct">
+                    <a class="itemct__enlacect" href="../index.html">
+                        <img class="enlacect__icoct" src="../assets/icons/inicio.svg" alt="Icono de inicio">
+                    </a>
+                </li>
+                <li class="listact__itemct">
+                    <a class="itemct__enlacect" href="./coffemexcomedorindustrial.html">
+                        <img class="enlacect__icoct" src="../assets/icons/coffemex.svg" alt="Icono de un chef">
+                    </a>
+                </li>
+                <li class="listact__itemct">
+                    <a class="itemct__enlacect" href="./yummybanquetes.html">
+                        <img class="enlacect__icoct" src="../assets/icons/yummy.svg" alt="Icono de cubiertos">
+                    </a>
+                </li>
+                <li class="listact__itemct">
+                    <a class="itemct__enlacect" href="./bitsdulcesrecuerdos.html">
+                        <img class="enlacect__icoct" src="../assets/icons/bits.svg" alt="Icono de dulces">
+                    </a>
+                </li>
+                <li class="listact__itemct">
+                    <img class="itemct__icoct" src="../assets/icons/contacto.svg" alt="Icono de contacto">
+                </li>
+            </ul>
+        </nav>
+        <div class="encabezadoct__tituloct">
+            <h1>Contacto</h1>
+        </div>
+    </header>
+    <main class="bodyct__principalct">
+                <form class="principalct__formct" action="..." method="post" enctype="...">
+                    <fieldset class="formct__fieldct--1">
+                        <legend class="fieldct__legendct">Datos personales</legend>
+    
+                        <div class="fieldct__nombrect">
+                            <label for="nombre">Nombre completo</label>
+                            <input id="nombre" name="nombre" type="text" placeholder="Ingrese nombre completo" required autocomplete="off">
+                        </div>
+    
+                        <div class="fieldct__edadct">
+                            <label for="edad">Edad</label>
+                            <input id="edad" name="edad" type="number" min="18" max="200">
+                        </div>
+                        
+                        <div class="fieldct__emailct">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com" required autocomplete="off">
+                        </div>
+    
+                        <div class="fieldct__telct">
+                            <label for="telefono">Teléfono</label>
+                            <input id="telefono" name="telefono" type="tel" placeholder="+00 000 000 0000" autocomplete="off">
+                        </div>
+    
+                        <div class="fieldct__estadoct">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado">
+                                <option value="dgo">Durango</option>
+                                <option value="coah">Coahuila</option>
+                            </select>
+                        </div>
+    
+                        <div class="fieldct__ciudadct">
+                            <label for="ciudad">Ciudad</label>
+                            <select name="ciudad" id="ciudad">
+                                <option value="lerdo">Lerdo</option>
+                                <option value="gomezpalacio">Gómez palacio</option>
+                                <option value="torreon">Torreón</option>
+                                <option value="matamoros">Matamoros</option>
+                            </select>
+                        </div>
+                </fieldset>
+    
+                <fieldset class="formct__fieldct--2">
+                    <legend class="fieldct__legendct">Información del evento</legend>
+    
+                    <div class="fieldct__servicioct">
+                        <label for="servicio">¿Cuál servicio necesitas?</label>
+                        <select name="servicio" id="servicio" required>
+                            <option value="yummy">Yummy banquetes</option>
+                            <option value="bits">Bits mesas de dulces</option>
+                        </select>
+                    </div> 
+    
+                    <div class="fieldct__eventoct">
+                        <label for="evento">¿Cuál es el tipo de evento?</label>
+                        <textarea name="evento" id="evento" cols="30" rows="3" placeholder="Recuerda que solo damos servicio en bodas, graduaciones y aniversarios. Para mayor seguridad especifica el tipo de evento para analizar si lo aceptamos." required></textarea>
+                    </div>
+    
+                    <div class="fieldct__fechact">
+                        <label for="fecha">Fecha del evento</label>
+                        <input id="fecha" name="fecha" type="date" required>
+                        <label for="hora">Hora del evento</label>
+                        <input id="hora" name="hora" type="time">
+                    </div>
+    
+                    <div class="fieldct__asistentesct">
+                        <label for="asistencia">Cantidad de personas que asistirán al evento</label>
+                        <input name="asistencia" id="asistencia" type="number" min="1" max="100000" required> 
+                    </div>
+    
+                    <div class="fieldct__comentariosct">
+                        <label for="comentario">Deja tu comentario</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="3" placeholder="Deja tus dudas, comentarios o más información del servicio que deseas recibir. Por ejemplo dudas sobre cotizaciones, o preguntas sobre los alimentos."></textarea>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="formct__fieldct--3">
+                    <legend class="fieldct__legendct">Finalizar formulario</legend>
+                    <input class="fieldct__cancelarct" type="button" id="cancelar" name="cancelar" value="Cancelar">
+                    <input class="fieldct__borrarct" type="reset" name="borrar" id="borrar">
+                    <input class="fieldct__enviarct" type="submit" name="enviar" id="enviar">
+                </fieldset>
+            </form>
+        </main>
+    
+        <footer class="bodyct__footerct">
+            <p class="footerct__pct">Sitio en proceso de creación. Creado por Jahyire Antunez.</p>
+            <div class="footerct__derechosautorct">
+                <h2 class="derechosautorct__subct">Agradecimento por imagenes</h2>
+                <div class="derechosautorct__parrafosct">
+                    <p class="parrafosct__pct--1">Foto de <a href="https://unsplash.com/es/@chuttersnap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CHUTTERSNAP</a> en <a href="https://unsplash.com/es/fotos/aEnH4hJ_Mrs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </footer>
+    
+</body>
+</html>
